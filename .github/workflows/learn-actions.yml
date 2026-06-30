@@ -1,0 +1,13 @@
+name: Task 1 - Hello World
+
+on: push
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo "Hello, GitHub Actions!"
+
+      - name: Show date
+        run: date
